@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello World!</title>
+</head>
+
+<body>
+    <form id="login-form" action="submit">
+        <fieldset>
+            <legend>
+                User Details
+            </legend>
+            <div>
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username" placeholder="Eg. Exsta" required />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" required />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Login Type
+            </legend>
+            <span>
+                <input id="register" type="radio" name="login_type" value="register" checked="checked">
+                <label for="register">Register</label>
+            </span>
+            <span>
+                <input id="login" type="radio" name="login_type" value="login">
+                <label for="login">Login</label>
+            </span>
+        </fieldset>
+        <input type="submit" value="Submit" />
+
+        <output name="result"></output>
+    </form>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
